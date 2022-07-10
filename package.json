@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/amarorn/node-tdd.git",
   "author": "amaro <j.amarorn@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "git-commit-msg-linter": "^4.1.3"
+  }
 }
