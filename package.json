@@ -1,0 +1,8 @@
+{
+  "name": "node-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/amarorn/node-tdd.git",
+  "author": "amaro <j.amarorn@gmail.com>",
+  "license": "MIT"
+}
