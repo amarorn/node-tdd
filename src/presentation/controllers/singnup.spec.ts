@@ -11,8 +11,8 @@ describe('Singnup Controller', () => {
       }
     }
     const httpResponse = sut.handle(httpRequest)
-    expect(httpResponse.statusCode).toBe(400)
-    expect(httpResponse.body).toEqual(new Error('Name is required'))
+    expect(httpResponse?.statusCode).toBe(400)
+    expect(httpResponse?.body).toEqual(new Error('Name is required'))
   })
 
   test('Should return 400 if no name is provided', () => {
@@ -25,7 +25,7 @@ describe('Singnup Controller', () => {
       }
     }
     const httpResponse = sut.handle(httpRequest)
-    expect(httpResponse.statusCode).toBe(400)
-    expect(httpResponse.body).toEqual(new Error('email is required'))
+    expect(httpResponse?.statusCode).toBe(400)
+    expect(httpResponse?.body).toEqual(new Error('email is required'))
   })
 })
