@@ -2,7 +2,6 @@ import { HttpResponse, HttpRequest } from '../protocols/http'
 import { MissingParamError } from '../errors/missing-param-error'
 
 export class SingupController {
-  // @ts-expect-error - verifica com os meninos
   handle (httpRequest: HttpRequest): HttpResponse {
     if (!httpRequest.body.name) {
       return {
@@ -15,6 +14,10 @@ export class SingupController {
         statusCode: 400,
         body: new MissingParamError('email')
       }
+    }
+    return {
+      statusCode: 200,
+      body: {}
     }
   }
 }
